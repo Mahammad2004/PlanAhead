@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Plan Ahead</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav-section {
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 75px;
+            left: 0;
+            width: 100%;
+            z-index: 1040;
+        }
+
+        .section-title {
+            margin-top: 80px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+        }
+
+        .section-icon {
+            font-size: 1.4rem;
+            margin-right: 8px;
+        }
+
+        .nav-pills {
+            justify-content: center !important;
+        }
+
+        .list-group-item {
+            position: relative;
+            z-index: 1;
+        }
+
+        #features,
+        #purpose,
+        #audience,
+        #team,
+        #vision {
+            scroll-margin-top: 140px;
+        }
+
+        #vision {
+            margin-bottom: 60px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 991.98px) {
+            .nav-section .nav {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                justify-content: center !important;
+                gap: 4px !important;
+            }
+
+            .nav-section .nav-link {
+                padding: 0.25rem 0.6rem !important;
+                font-size: 0.85rem !important;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-dark">
+
+    <!-- Main Nav -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom position-fixed top-0 w-100" style="z-index: 1050;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../logo.png" alt="Plan Ahead Logo" class="img-fluid me-3" width="60" height="60">
+                <h3 class="mb-0">Plan Ahead</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="../student/studentDashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Nav Section -->
+    <section class="nav-section py-2">
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center flex-wrap gap-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#purpose">Purpose</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#audience">Audience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#vision">Vision</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <div class="container py-2  mt-xs-2 mt-md-5 pt-5">
+
+        <!-- Purpose -->
+        <section id="purpose">
+            <h2 class="section-title"><span class="section-icon">🧭</span>Purpose of the Web App</h2>
+            <p class="lead">
+                <strong>Plan Ahead</strong> was created to simplify course registration and academic planning for
+                students. Instead of juggling Excel sheets, clashing slots, and confusing timetables, this platform
+                brings everything into one clean, student-friendly interface.
+            </p>
+            <p>
+                The idea came directly from student struggles — missed courses due to slot confusion, stress during
+                registration week, and no easy way to visualize your week. This tool eliminates those pain points.
+            </p>
+        </section>
+
+        <!-- Audience -->
+        <section id="audience">
+            <h2 class="section-title"><span class="section-icon">👥</span>Who It's For</h2>
+            <p>
+                This platform is tailored for the real needs of:
+            </p>
+            <ul>
+                <li><strong>Students</strong> who want to register quickly, avoid slot clashes, and manage their
+                    academic plans visually.</li>
+                <li><strong>Admins</strong> who need to upload and manage course data, slot timings, and
+                    simplify backend handling.</li>
+            </ul>
+            <p>
+                Whether you're in your first semester or final year, Plan Ahead helps you make informed decisions during
+                course selection.
+            </p>
+        </section>
+
+        <!-- Features -->
+        <section id="features">
+            <h2 class="section-title"><span class="section-icon">🏗️</span>Key Features</h2>
+            <p>
+                Every feature in Plan Ahead exists because students like you asked for it, faced issues with older
+                systems, or needed more clarity.
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>📌 Conflict-Free Selection:</strong> Add only valid courses — no
+                    more overlapping slots or double bookings.</li>
+                <li class="list-group-item"><strong>🗓️ Live Timetable Preview:</strong> Instantly see how your week
+                    looks with selected courses filled in automatically.</li>
+                <li class="list-group-item"><strong>📤 PDF Export:</strong> One-click download of your final course list
+                    and weekly timetable for offline use or sharing.</li>
+                <li class="list-group-item"><strong>🕒 Auto-Saved Timetables:</strong> Keeps your previous course
+                    selections locally for 7 days, even if you close the tab.</li>
+                <li class="list-group-item"><strong>🎨 Clean UI:</strong> No clutter. Just a focused, mobile-friendly
+                    design that helps you think clearly and act faster.</li>
+                <li class="list-group-item"><strong>🔐 Admin Tools:</strong> Upload full course catalogs and slot
+                    mappings using Excel or CSV templates.</li>
+            </ul>
+        </section>
+
+        <!-- Team
+        <section id="team">
+            <h2 class="section-title"><span class="section-icon">👨‍💻</span>Meet the Creator</h2>
+            <p>
+                <strong>Dudekula Mahammad Basha</strong> — a student at VIT-AP University — built Plan Ahead from the
+                ground up
+                with one thing in mind: make academic planning feel less like a chore and more like a checklist.
+            </p>
+            <p>
+                Having gone through the same registration chaos semester after semester, he decided to create something
+                simple, fast, and useful for every student. And that’s how Plan Ahead came to life.
+            </p>
+            <ul>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mahammadbasha1004/"
+                        target="_blank">https://www.linkedin.com/in/mahammadbasha1004/</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Mahammad2004"
+                        target="_blank">https://github.com/Mahammad2004</a></li>
+            </ul>
+        </section>-->
+
+        <!-- Vision -->
+        <section id="vision">
+            <h2 class="section-title"><span class="section-icon">💡</span>Vision & Future Plans</h2>
+            <p>
+                <strong>Plan Ahead</strong> is built by a student for students — and that mission drives every next
+                step. The platform will continue to evolve based on real campus needs, feedback, and smarter tools.
+            </p>
+            <ul>
+                <li>📲 <strong>Mobile App:</strong> Native Android/iOS support for on-the-go course tracking and instant
+                    updates.</li>
+                <li>📅 <strong>Future Semester Planning:</strong> Add potential future courses and test out what-if
+                    scenarios before registration opens.</li>
+                <li>🔔 <strong>Real-Time Notifications:</strong> Get notified when a slot time table and course catalog
+                    updated for each semester.</li>
+            </ul>
+            <p>
+                Plan Ahead will continue to grow — guided by student input, inspired by real problems, and driven by the
+                idea that smart planning leads to better academic success.
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fixed-bottom">
+        &copy; 2025 | Built with ❤️ for <strong>VIT-AP STUDENTS</strong>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

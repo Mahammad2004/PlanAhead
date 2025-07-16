@@ -1,0 +1,228 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar {
+    background-color: #ffffffcc;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1b1f3a;
+    text-align: center;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+h3::after {
+    content: "";
+    width: 60%;
+    height: 5px;
+    background: #0077b6;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    border-radius: 5px;
+}
+
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.card-custom {
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    background-color: #ffffffee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn-lg {
+    min-width: 180px;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    transition: 0.2s ease;
+}
+
+.logo {
+    width: 200px;
+}
+
+main p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.125rem;
+    color: #2c2c2c;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+}
+
+#lottieAnimation {
+    max-width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* Gradient Buttons */
+.gradient-btn {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 242, 254, 0.3);
+}
+
+.gradient-btn-green {
+    background: linear-gradient(to right, #43e97b, #38f9d7);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.gradient-btn-green:hover {
+    background: linear-gradient(to right, #38f9d7, #43e97b);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(56, 249, 215, 0.3);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .frosted-glass {
+        padding: 2rem 1rem;
+        margin: 0 1rem;
+    }
+
+    #lottieAnimation {
+        height: 300px;
+    }
+
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .text-muted {
+        font-size: 1rem;
+    }
+
+    main p {
+        font-size: 1rem;
+        /* Slightly smaller on tablets/mobiles */
+        line-height: 1.6;
+        text-align: center;
+        /* Center-align for better mobile UX */
+        padding: 0 10px;
+        /* Some horizontal spacing */
+    }
+
+    main {
+        margin-top: 10px;
+    }
+
+    .content {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 426px) {
+    main p {
+        font-size: 0.95rem;
+        /* Even smaller for very narrow screens */
+        line-height: 1.5;
+    }
+
+    .navbar-brand h3 {
+        font-size: 1.4rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .navbar-brand h3::after {
+        height: 3px;
+        width: 50%;
+    }
+
+    img {
+        width: 50px;
+        height: 50px
+    }
+
+    main {
+        margin-top: -30px;
+    }
+
+    .menu-icon,
+    .navbar-toggler {
+        font-size: 1.2rem;
+        padding: 0.3rem;
+    }
+
+    .btn-lg {
+        font-size: 0.9rem;
+        padding: 0.65rem 1.15rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar-brand h3 {
+        font-size: 1.2rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .navbar-brand h3::after {
+        height: 3px;
+        width: 50%;
+    }
+
+    .menu-icon,
+    .navbar-toggler {
+        font-size: 1rem;
+    }
+
+    #lottieAnimation {
+        height: 200px;
+    }
+
+    main p {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    .content {
+        margin-top: 10px;
+    }
+}
