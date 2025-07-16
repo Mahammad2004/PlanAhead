@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlanAhead | Course Registration Planning Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top px-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../logo.png" alt="Plan Ahead Logo" class="img-fluid me-2" width="60" height="60">
+                <h3>Plan Ahead</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="d-flex align-items-center justify-content-center">
+            <div class="container p-3">
+                <div class="p-4 px-md-4">
+                    <div class="row align-items-center g-4 flex-column flex-lg-row">
+                        <!-- Lottie Animation (top on mobile) -->
+                        <div class="col-lg-6 order-1 order-lg-1 text-center mt-xs-3 mt-md-0">
+                            <div id="lottieAnimation"></div>
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="col-lg-6 order-2 order-lg-2 d-flex flex-column align-items-center justify-content-center text-center text-lg-center content">
+                            <!-- Logo (hidden on mobile) -->
+                            <div class="mb-2 d-none d-lg-block">
+                                <img src="logo.png" alt="PlanAhead Logo" class="logo img img-fluid" />
+                            </div>
+
+                            <p class="text-muted mb-4">
+                                Select, plan, and visualize your semester courses and timetable effortlessly with
+                                <strong>PlanAhead</strong>.
+                            </p>
+
+                            <div
+                                class="d-flex flex-column flex-sm-row gap-3 w-100 justify-content-center justify-content-lg-start">
+                                <a href="admin/login.html" class="btn gradient-btn btn-lg flex-fill">🔐 Admin Login</a>
+                                <a href="student/studentDashboard.html"
+                                    class="btn gradient-btn-green btn-lg flex-fill">🎓 Student Portal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fixed-bottom">
+        &copy; 2025 | Built with ❤️ for <strong> VIT-AP STUDENTS</strong>
+    </footer>
+    <script src="../js/common.js">
+    </script>
+</body>
+
+</html>
