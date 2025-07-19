@@ -111,19 +111,23 @@ course-registration/
 
 ---
 
+### Rendering course catalog and time table structure
+
+- Admin manually generates JSON files (i.e courses.json, slotTimeMap.json, timetable.json) and places in **assets** folder.
+
 ## 🧪 Sample Data Format
 
 ### 📘 `course-catalog-sample.xlsx`
-| COURSE CODE | COURSE TITLE       | COURSE TYPE | SLOT       |
-|-------------|--------------------|-------------|------------|
-| CSE1013     | Formal Languages   | Theory      | A1+TA1     |
-| CSE2001     | Data Structures    | Theory      | C1+TC1     |
+| COURSE CODE | COURSE TITLE       | COURSE TYPE | SLOT       | CREDITS    |
+|-------------|--------------------|-------------|------------|------------|
+| CSE1013     | Formal Languages   | Theory      | A1+TA1     | 3          |
+| CSE2001     | Data Structures    | Theory      | C1+TC1     | 3          | etc..
 
 ### 📆 `slot-timetable-sample.xlsx`
 | SLOT | DAY  | START TIME | END TIME |
 |------|------|------------|----------|
 | A1   | Mon  | 08:00      | 08:50    |
-| B1   | Mon  | 09:00      | 09:50    |
+| B1   | Mon  | 09:00      | 09:50    | etc..
 
 ---
 
@@ -137,11 +141,9 @@ course-registration/
 
 ## 🔮 Vision & Future Roadmap
 
-- 📱 **Native Mobile App** (Flutter-based): For on-the-go access
-- 📊 **Analytics for Admins**: Track course demand, preferred slots
-- 🧠 **AI-based Suggestions**: Recommend best schedule based on preferences
-- 🔔 **Real-Time Updates**: Push notifications for catalog or slot changes
-- 🧾 **Semester Forecasting**: Add hypothetical future plans
+- 📲 **Mobile App**: Native Android/iOS support for on-the-go course tracking and instant updates.
+- 📅 **Future Semester Planning**: Add potential future courses and test out what-if scenarios before registration opens.
+- 🔔 **Real-Time Notifications**: Get notified when a slot time table and course catalog updated for each semester.
 
 ---
 
@@ -164,7 +166,7 @@ No setup needed.
 ## 👨‍💻 Author
 
 Built with ❤️ by **Dudekula Mahammad Basha**,  
-B.Tech Student, VIT-AP University  
+Integrated M.Tech Student, VIT-AP University  
 Aiming to solve real-world campus issues with smart software.
 
 - 🌐 [LinkedIn](https://www.linkedin.com/in/mahammadbasha1004/)
