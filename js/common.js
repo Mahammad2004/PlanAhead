@@ -92,37 +92,6 @@ function formatSlot(slot, timetable) {
  * @param {string} type - success | error | info
  */
 
-// Smooth page transition on navigation
-document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll("a[href]");
-
-    links.forEach(link => {
-        const url = new URL(link.href, window.location.href);
-
-        // Only apply to same-origin links (not external or download links)
-        if (url.origin === location.origin) {
-            link.addEventListener("click", function (e) {
-                // Ignore if target="_blank" or with modifiers
-                if (
-                    link.target === "_blank" ||
-                    e.metaKey || e.ctrlKey || e.shiftKey || e.altKey
-                ) return;
-
-                e.preventDefault(); // Stop immediate navigation
-                document.body.classList.add("fade-out");
-
-                setTimeout(() => {
-                    window.location.href = link.href;
-                }, 500); // Match the CSS transition duration
-            });
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    document.body.style.opacity = '1';
-});
-
 function showToast(message, type = 'success') {
     const toastContainer = document.getElementById('toastContainer');
     const toast = document.createElement('div');
