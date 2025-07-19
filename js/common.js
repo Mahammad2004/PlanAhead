@@ -146,7 +146,7 @@ if (animContainer) {
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: 'animations/register.json'
+            path: './animations/register.json'
         });
     };
     document.head.appendChild(script);
